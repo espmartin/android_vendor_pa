@@ -16,6 +16,14 @@ PRODUCT_PACKAGES += \
     Busybox \
     Lightbulb
 
+# Remix Packages
+PRODUCT_PACKAGES += \
+    LockClock \
+    Trebuchet \
+    DSPManager \
+    libcyanogen-dsp \
+    audio_effects.conf
+
 # Source or prebuilt PA-prefs logic
 #ifneq ($(PREFS_FROM_SOURCE),true)
 #    PRODUCT_COPY_FILES += \
