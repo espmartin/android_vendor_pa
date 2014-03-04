@@ -1,4 +1,4 @@
-﻿# Copyright (C) 2013 ParanoidAndroid Project
+# Copyright (C) 2013 ParanoidAndroid Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Check for target product
-ifeq (pa_xt897c,$(TARGET_PRODUCT))
+ifeq (pa_moto_msm8960,$(TARGET_PRODUCT))
 
 # OVERLAY_TARGET adds overlay asset source
 OVERLAY_TARGET := pa_xhdpi
@@ -28,13 +28,13 @@ $(call inherit-product, vendor/pa/configs/telephony.mk)
 include vendor/pa/main.mk
 
 # Inherit AOSP device configuration
-$(call inherit-product, device/motorola/xt897/full_xt897.mk)
+$(call inherit-product, device/motorola/moto_msm8960/full_moto_msm8960.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_xt897c
+PRODUCT_DEVICE := moto_msm8960
+PRODUCT_NAME := pa_moto_msm8960
 PRODUCT_BRAND := motorola
-PRODUCT_MODEL := xt897
+PRODUCT_MODEL := xt926
 PRODUCT_MANUFACTURER := motorola
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=xt897 TARGET_DEVICE=xt897 BUILD_FINGERPRINT="motorola/XT897_us_spr/asanti_c:4.1.2/9.8.2Q-122_XT897_FFW-5/6:user/release-keys"
 
 endif
