@@ -25,9 +25,6 @@ PREFS_FROM_SOURCE ?= false
 # Inherit telephony common stuff
 $(call inherit-product, vendor/pa/configs/telephony.mk)
 
-# Enhanced NFC
-$(call inherit-product, vendor/pa/configs/nfc_enhanced.mk)
-
 # Include AOSPA common configuration
 include vendor/pa/main.mk
 
