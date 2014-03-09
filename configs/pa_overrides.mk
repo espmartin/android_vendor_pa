@@ -24,7 +24,8 @@ PRODUCT_PACKAGES += \
     libcyanogen-dsp \
     audio_effects.conf \
     ScreenRecorder \
-    libscreenrecorder
+    libscreenrecorder \
+    KernelTweaker
 
 # Source or prebuilt PA-prefs logic
 #ifneq ($(PREFS_FROM_SOURCE),true)
