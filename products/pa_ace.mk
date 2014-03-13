@@ -30,7 +30,7 @@ $(call inherit-product, device/htc/ace/device.mk)
 
 # Override AOSP build properties
 PRODUCT_DEVICE := ace
-PRODUCT_NAME := aokp_ace
+PRODUCT_NAME := pa_ace
 PRODUCT_BRAND := htc_wwe
 PRODUCT_MODEL := Desire HD
 PRODUCT_MANUFACTURER := HTC
