@@ -29,10 +29,11 @@ include vendor/pa/main.mk
 $(call inherit-product, device/htc/ace/device.mk)
 
 # Override AOSP build properties
-PRODUCT_NAME := pa_toro
-PRODUCT_BRAND := Google
-PRODUCT_MODEL := Galaxy Nexus
-PRODUCT_MANUFACTURER := Samsung
+PRODUCT_DEVICE := ace
+PRODUCT_NAME := aokp_ace
+PRODUCT_BRAND := htc_wwe
+PRODUCT_MODEL := Desire HD
+PRODUCT_MANUFACTURER := HTC
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=htc_ace BUILD_FINGERPRINT="htc_wwe/htc_ace/ace:$(PLATFORM_VERSION)/$(BUILD_ID)/$(shell date +%Y%m%d%H%M%S):$(TARGET_BUILD_VARIANT)/test-keys" PRIVATE_BUILD_DESC="htc_ace-$(TARGET_BUILD_VARIANT) $(PLATFORM_VERSION) $(BUILD_ID) $(shell date +%Y%m%d%H%M%S) test-keys"
 
 endif
